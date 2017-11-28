@@ -1,8 +1,10 @@
+
 <div class="row">
+
     <div class="col-sm-12">
         <section class="panel">
             <header class="panel-heading">
-                Movies List Get Via Crawler
+                Dynamic Table
                 <span class="tools pull-right">
                     <a href="javascript:;" class="fa fa-chevron-down"></a>
                     <a href="javascript:;" class="fa fa-cog"></a>
@@ -10,8 +12,8 @@
                 </span>
             </header>
             <div class="panel-body">
-                <section id="unseen">
-                    <table class="table table-bordered table-striped table-condensed">
+                <div class="adv-table">
+                    <table class="display table table-bordered table-striped" id="dynamic-table">
                         <thead>
                             <tr>
                                 <th>SNO</th>
@@ -23,32 +25,84 @@
                             </tr>
                         </thead>
                         <tbody>
-                              <tr>
+
+                            <tr class="gradeC">
+                                <td>Trident</td>
+                                <td>Internet Explorer 5.0</td>
+                                <td>Win 95+</td>
+                                <td class="center hidden-phone">5</td>
+                                <td class="center hidden-phone">C</td>
+                                <td>
+                                    <button class="btn btn-primary btn-xs">
+                                        <span class="glyphicon glyphicon-pencil"></span>
+                                    </button>
+                                    <button class="btn btn-danger btn-xs">
+                                        <span class="glyphicon glyphicon-trash"></span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
                                 <td class="align-middle">1</td>
                                 <td class="align-middle">234</td>
                                 <td class="align-middle">JodhaAkbar</td>
                                 <td>6</td>
                                 <td>YES</td>
-                                <td class="text-center">
-
-
-                                    <button type="button" class="btn btn-primary">
-                                        <i class="fa fa-check"></i>
+                                <td>
+                                    <button class="btn btn-primary btn-xs">
+                                        <span class="glyphicon glyphicon-pencil"></span>
                                     </button>
-
-
-                                    <button type="button" class="btn btn-danger">
-                                        <i class="fa fa-times"></i>
+                                    <button class="btn btn-danger btn-xs">
+                                        <span class="glyphicon glyphicon-trash"></span>
                                     </button>
-
-
                                 </td>
                             </tr>
-                            
+
                         </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>SNO</th>
+                                <th>Movie ID</th>
+                                <th>Movie Name</th>
+                                <th>Total Audio Count</th>
+                                <th>Poster Available</th>
+                                <th>Action</th>
+                            </tr>
+                        </tfoot>
                     </table>
-                </section>
+
+                    <div class="row-fluid">
+                            <div class="span">
+                                <div class="dataTables_paginate paging_bootstrap pagination">
+                                    <ul>
+                                        <li class="prev disabled">
+                                            <a href="#">← Previous</a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="#">1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">4</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">5</a>
+                                        </li>
+                                        <li class="next">
+                                            <a href="#">Next → </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
             </div>
         </section>
     </div>
+
 </div>

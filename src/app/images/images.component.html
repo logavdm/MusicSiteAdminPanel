@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-sm-12">
+        <section class="panel">
+            <header class="panel-heading">
+                Media Manager
+                <span class="tools pull-right">
+                    <a href="javascript:;" class="fa fa-chevron-down"></a>
+                    <a href="javascript:;" class="fa fa-cog"></a>
+                    <a href="javascript:;" class="fa fa-times"></a>
+                </span>
+            </header>
+            <div class="panel-body">
+
+
+                <form action="#" class="form-horizontal" (keyup.enter)="submitButton()">
+
+                    <div class="form-group">
+                        <label class="control-label col-md-3">Search Movie Images</label>
+                        <div class="col-md-4 col-xs-11">
+                            <input class="form-control form-control-inline input-medium default-date-picker" size="16" type="text" [(ngModel)]="searchQuery"
+                                [ngModelOptions]="{standalone: true}">
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control btn-primary" type="button" value="Search" (click)="SearchMovie()">
+                        </div>
+                    </div>
+
+
+                </form>
+                <div id="gallery" class="media-gal">
+                    <div class="images item " *ngFor="let img of imageList">
+                        <a href="#myModal" data-toggle="modal">
+                            <img src="{{img.src}}" alt="" onError="this.src='assets/images/img_loader.gif'" />
+                        </a>
+                        <p>( {{img.width}} X {{img.height}} ) </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</div>

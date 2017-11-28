@@ -1,5 +1,5 @@
-
 <section id="container">
+       
 <!--header start-->
 <header class="header fixed-top clearfix">
 <!--logo start-->
@@ -19,13 +19,13 @@
         <ul class="nav top-menu">
             <!-- settings start -->
             <li>
-                <a>Music Admin Page</a>
+               <span style="font-size:20px;"> Music Admin Page</span>
             </li>
             <!-- settings end -->           
         </ul>
         <!--  notification end -->
     </div>
-
+   
 </header>
 <!--header end-->
 
@@ -51,11 +51,8 @@
 <!--main content start-->
 <section id="main-content">
 <section class="wrapper">
-
-    <app-MovieList></app-MovieList>
-    <app-AddMovie></app-AddMovie>
-
-
+        <ng2-slim-loading-bar [color]="'green'" [height]="'4px'"></ng2-slim-loading-bar>        
+    <router-outlet></router-outlet>  
 </section>
 </section>
 <!--main content end-->
